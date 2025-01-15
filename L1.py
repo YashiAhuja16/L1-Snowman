@@ -2,8 +2,8 @@ import turtle as t
 t.bgcolor ("#89CFF0") # background color 
 
 t.width (4)
-
-t.color("#F4C2C2", "white ") 
+t.speed(0)
+t.color("#F4C2C2", "white") 
 t.begin_fill()
 for y in range (36): #bottom circle
     t.forward (20)
@@ -11,13 +11,53 @@ for y in range (36): #bottom circle
 t.end_fill ()
 
 
-t.color("#F4C2C2", "white ") 
+t.color("#F4C2C2", "white") 
 t.begin_fill()
-for y in range (36): #bottom circle
+for y in range (36): #middle circle
     t.forward (15)
     t.left(10)
 t.end_fill ()
 
+    
+t.penup()
+t.goto(0,172)
+t.pendown()    
+t.color("#F4C2C2", "white")
+t.begin_fill()
+for x in range (36): #top circle
+    t.forward(10)
+    t.left(10)
+t.end_fill()
+
+#left eye
+t.penup()
+t.goto(-20,232)
+t.pendown()
+t.color("black")
+t.begin_fill()
+t.circle(10)
+t.end_fill ()
+
+#right eye 
+t.penup ()
+t.goto (30,232)
+t.pendown()
+t.color("black")
+t.begin_fill()
+t.circle(10)
+t.end_fill()
+
+#smile
+t.penup()
+t.goto(-15,202)
+t.pendown()
+t.setheading(270)
+t.circle(20,180)
+
+t.penup()
+t.goto(-15,202)
+t.pendown()
+t.setheading(270)
+t.circle(20,180)
+
 t.mainloop ()# to hold the turtle screen 
-    
-    
