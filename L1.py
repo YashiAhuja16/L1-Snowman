@@ -59,5 +59,16 @@ t.goto(-15,202)
 t.pendown()
 t.setheading(270)
 t.circle(20,180)
-
+# right arm
+t.penup()
+t.goto(95,100)
+t.pendown()
+t.setheading(300)
+t.forward(90)
+# left arm
+t.penup()
+t.goto(-80,100)
+t.pendown()
+t.setheading(240)
+t.forward(90)
 t.mainloop ()# to hold the turtle screen 
